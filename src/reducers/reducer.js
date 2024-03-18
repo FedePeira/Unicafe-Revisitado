@@ -28,7 +28,9 @@ const counterReducer = (state = initialState, action) => {
     case 'ZERO':
       console.log('ZERO --> ' + (state = 0) )
       return {
-        ...state
+        good: 0,
+        ok: 0,
+        bad: 0
       }
     case 'DO_NOTHING':
       console.log('DO_NOTHING --> ', state)
